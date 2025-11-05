@@ -48,3 +48,18 @@ prevButton.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', updateCarousel);
+
+// ✅ Auto-scroll functionality
+let autoScrollInterval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateCarousel();
+  }, 5000); // 👈 change time here (5000 = 5 seconds)
+  
+  // Optional: reset the auto-scroll timer when user interacts
+  function resetAutoScroll() {
+    clearInterval(autoScrollInterval);
+    autoScrollInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    }, 5000);
+  }
