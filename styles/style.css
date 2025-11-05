@@ -94,7 +94,7 @@ section {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    max-width: 900px;
+    /*max-width: 900px;*/
     width: 100%;
     margin-inline: auto;    /* centre within parent container */
     padding: 1rem 0;
@@ -145,3 +145,23 @@ section {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
   }
+
+  /* Default: 3 cards visible */
+.card-carousel .card {
+    flex: 0 0 calc(100% / 3);
+  }
+  
+  /* On tablets: 2 cards */
+  @media (max-width: 900px) {
+    .card-carousel .card {
+      flex: 0 0 50%;
+    }
+  }
+  
+  /* On mobile: 1 card */
+  @media (max-width: 600px) {
+    .card-carousel .card {
+      flex: 0 0 100%;
+    }
+  }
+  
