@@ -19,6 +19,7 @@
 
     <!-- JavaScript script files -->
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/card-carousel.js" defer></script>
 </head>
 <body>
     <header role="banner">
@@ -27,7 +28,6 @@
     <main role="main">
         <section>
             <div class="container">
-
                 <!-- Carousel -->
                 <div class="carousel">
                     <div class="carousel__slides">
@@ -54,7 +54,29 @@
                     </div>
                 </div>
                 <!-- / END: Carousel -->
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <!-- Card Carousel -->
+                <div class="card-carousel">
+                    <button class="arrow arrow--prev" aria-label="Previous">&#10094;</button>
+                
+                    <div class="carousel-viewport">
+                      <div class="carousel-track">
+                        <article class="card">Card 1</article>
+                        <article class="card">Card 2</article>
+                        <article class="card">Card 3</article>
+                        <article class="card">Card 4</article>
+                        <article class="card">Card 5</article>
+                        <article class="card">Card 6</article>
+                      </div>
+                    </div>
+                
+                    <button class="arrow arrow--next" aria-label="Next">&#10095;</button>
+                  </div>
+                <!-- / END: Card Carousel -->
             </div>
         </section>
     </main>
