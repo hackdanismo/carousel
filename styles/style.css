@@ -69,7 +69,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding-bottom: 1rem;
 }
   
 .carousel__dot {
