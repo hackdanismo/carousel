@@ -23,6 +23,11 @@ main {
     display: block;
 }
 
+section {
+    /* Vertical padding: min 1rem, prefers 5vw, max 1rem */
+    padding-block: clamp(1rem, 5vw, 1rem);
+}
+
 .container {
     /* Set the container to take the full width of the page or parent element */
     width: 100%;
@@ -51,6 +56,15 @@ main {
 
 .slide {
     min-width: 100%;
+}
+
+/* Make the images fill each slide and scale correctly */
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* Image to fill slide without distortion, maintains aspect ratio */
+    object-fit: cover;
+    display: block;
 }
 
 .carousel__buttons {
