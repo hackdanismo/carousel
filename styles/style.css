@@ -33,3 +33,19 @@ main {
     /* Add horizontal padding to provide spacing on smaller screen sizes */
     padding: 0 1rem;
 }
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel__slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
