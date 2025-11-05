@@ -5,6 +5,12 @@ const prevButton = document.querySelector('.prev');
 
 let currentIndex = 0;
 
+// ✅ Hide navigation if only one slide
+if (slides.length <= 1) {
+  nextButton.style.display = 'none';
+  prevButton.style.display = 'none';
+}
+
 function updateCarousel() {
   const slideWidth = slides[0].clientWidth;
   slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
