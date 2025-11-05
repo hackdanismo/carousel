@@ -1,0 +1,35 @@
+/* Universal selector applies styling properties to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* Set the root font size as a fallback if browsers do not support rem units */
+    font-size: 16px;
+    /* Set the root font size */
+    font-size: 1rem;
+    /* Enable smooth scrolling for the page */
+    scroll-behavior: smooth;
+}
+
+html, body {
+    /* Remove the default margin */
+    margin: 0;
+    /* Remove the default padding */
+    padding: 0;
+}
+
+main {
+    display: block;
+}
+
+.container {
+    /* Set the container to take the full width of the page or parent element */
+    width: 100%;
+    /* Set the maximum width of the container to avoid stretching on larger screen sizes */
+    max-width: 1240px;
+    /* Center align the container horizontally */
+    margin: 0 auto;
+    /* Add horizontal padding to provide spacing on smaller screen sizes */
+    padding: 0 1rem;
+}
