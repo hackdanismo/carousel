@@ -10,6 +10,7 @@ let currentIndex = 0;
 // ✅ Hide navigation if only one slide
 if (slides.length <= 1) {
     carouselButtons.style.display = 'none';
+    dotsContainer.style.display = 'none';
 }
 
 // ✅ Create dots dynamically
